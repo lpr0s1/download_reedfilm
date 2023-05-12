@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      text-align: center;
+      user-select: none;
+    }
+    
+    .rating {
+      user-select: none;
+      user-zoom: none;
+      display: inline-block;
+    }
+    
+    .rating input {
+      display: none;
+    }
+    
+    .rating label {
+      user-select: none;
+      font-size: 40px;
+      color: #ffca08;
+      cursor: pointer;
+    }
+    
+    .rating label:hover,
+    .rating label:hover ~ label,
+    .rating input:checked ~ label {
+      color: #ddd;
+    }
+    
+    input[type="submit"] {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #ffca08;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color:red">Notez ReedFilm</h1>
+  <form action="https://formsubmit.co/trolclash20@gmail.com" method="POST">
+    <center>
+    <div class="rating">
+      <input type="radio" id="star6" name="rating" value="6">
+      <label for="star6">&#9733;</label>
+      <input type="radio" id="star5" name="rating" value="5">
+      <label for="star5">&#9733;</label>
+      <input type="radio" id="star4" name="rating" value="4">
+      <label for="star4">&#9733;</label>
+      <input type="radio" id="star3" name="rating" value="3">
+      <label for="star3">&#9733;</label>
+      <input type="radio" id="star2" name="rating" value="2">
+      <label for="star2">&#9733;</label>
+      <input type="radio" id="star1" name="rating" value="1">
+      <label for="star1">&#9733;+5</label>
+      
+    </div>
+    <input type="submit" value="Soumettre">
+  </form>
+</body>
+
+</html>
